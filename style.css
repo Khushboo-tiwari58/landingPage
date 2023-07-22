@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    top: 0;
+}
+header img{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 10px 0px 10px 90px;
+}
+header a{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    padding-right: 50px;
+    font-size: 60px;
+}
+header a span{
+    color: aqua;
+}
+header nav ul{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin-left: 100px;
+    margin-right: 20px;
+}
+header nav ul li a{
+    position: relative;
+    padding: 15px;
+    font-size: 17px;
+}
+header .btn{
+    position: relative;
+    background-color: blue;
+    color: white;
+    font-size: 17px;
+    border-radius: 15px;
+    padding: 10px 15px 10px 15px;
+    font-weight: bolder;
+    border-color: rgb(0, 0, 44);
+}
+header .btn:hover{
+    color: black;
+    background-color: rgb(101, 101, 250);
+}
+.container .carousel{
+    box-sizing: border-box;
+    position: relative;
+}
+.container .inner{
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+.container .mySlides {
+    display: none;
+}
+.container .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.container .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.container .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+.container .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.container .text{
+    position: absolute;
+   top: 40%;
+   left: 50%;
+   color: white;
+   transform: translate(-50%, -50%);
+}
+.container .text h1{
+    position: relative;
+    font-size: 2.6rem;
+    color:#1f242d;
+    -webkit-text-stroke: 0.3vw #3e4657;
+    text-transform: uppercase;
+}
+.container .text h1::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: rgb(1, 115, 115);
+    -webkit-text-stroke: 0vw #323843;
+    border-right: 2px solid aqua;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+.container .btn{
+    margin-left: 100px;
+    margin-top: 30px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: rgb(36, 7, 49);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(rgb(9, 54, 54));
+    font-size: 1.6rem;
+    color: white;
+    font-weight: 600;
+    transition: .5s ease;
+}
+.container .btn:hover{
+    background-color: rgb(70, 47, 92);
+    color: aqua;
+}
+.container .fade {
+    animation-name: slide;
+    animation-duration: 1.5s;
+} 
+.container .second{
+    display: flex;
+    flex-direction: row;
+    margin: 50px 50px 100px 100px;
+} 
+.second .one{
+    margin-right: 50px; 
+    margin-left:50px;
+    padding: 20px 30px 20px 30px; 
+    background-color: rgb(174, 228, 210);
+    border-radius: 10px;
+}
+.second .two{
+    margin-right: 50px; 
+    margin-left:50px;
+    padding: 20px; 
+    background-color: rgb(174, 228, 210);
+    border-radius: 10px;
+}
+.second .three{
+    margin-right: 50px; 
+    margin-left:50px;
+    padding: 20px;
+    background-color: rgb(174, 228, 210);
+    border-radius: 10px; 
+}
+.second .four{
+    margin-right: 50px; 
+    margin-left:50px;
+    padding: 20px; 
+    background-color: rgb(174, 228, 210);
+    border-radius: 10px;
+}
+.second .one:hover{
+    background-color: rgb(169, 162, 176);
+    padding: 25px;
+}
+.second .two:hover{
+    background-color: rgb(169, 162, 176);
+    padding: 25px;
+}
+.second .three:hover{
+    background-color: rgb(169, 162, 176);
+    padding: 25px;
+}
+.second .four:hover{
+    background-color: rgb(169, 162, 176);
+    padding: 25px;
+}
+.second .one h1{
+    padding: 10px;
+}
+.second .two h1{
+    padding: 10px;
+}
+.second .three h1{
+    padding: 10px;
+}
+.second .four h1{
+    padding: 10px;
+}
+.third {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgb(40, 27, 52);
+    color: white;
+}
+.third .left{
+    margin: 20px;
+    padding-bottom: 10px;
+    margin-left: 40px;
+}
+.third .left h1{
+    padding-top: 30px;
+}
+.third .left p{
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.third .right{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2rem;
+    margin: 20px;
+    padding: 10px;
+}
+.third .right p{
+    padding-top: 10px;    
+}
+.third .btn{
+    padding:15px;
+    font-size: 20px;
+    border: 5px solid rgb(24, 46, 46);
+}
+.third .btn:hover{
+    background-color: white;
+    color: rgb(1, 28, 28);
+}
+.fourth{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 30px;
+    background-color: #1f242d;
+    color: white;
+}
+.fourth ul li{
+    padding-top: 10px;
+}
+.fourth p{
+    padding: 2px;
+}
+.fourth .stand1 h2{
+    padding-bottom: 10px;
+}
+.fourth .stand4 h2{
+    padding-bottom: 10px;
+}
+.fourth .stand1{
+    padding: 30px;
+}
+.fourth .stand2{
+    padding: 30px;
+    justify-content: center;
+}
+.fourth .stand3{
+    padding-top: 30px;  
+}
+.fourth .stand4{
+    padding: 30px;
+    
+}
+.fourth ul li a{
+    text-decoration: none;
+    color: white;
+}
+.third:hover{
+    background-color: #323946;
+}
+.fourth:hover{
+    background-color: #323843;
+}
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+footer .l2{
+    font-size: 25px;
+}
+footer .l2 i{
+    padding-left: 5px;
+    color: #404858;
+}
+footer .l2 i:hover{
+    color: aqua;
+    border-color: rgb(172, 171, 171);
+}
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+@keyframes animate{
+    0%,10%,100%{
+        width: 0;
+    }
+    70%,90%{
+        width: 100%;
+    }
+}
